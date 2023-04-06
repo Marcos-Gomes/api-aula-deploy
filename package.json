@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "start": "'/opt/render/project/src/index.js'"
   },
   "keywords": [],
   "author": "",
