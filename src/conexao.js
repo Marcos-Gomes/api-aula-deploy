@@ -4,7 +4,13 @@ const knex = require('knex')({
         host: process.env.DB_LOCALHOST,
         user: process.env.DB_USER,
         password: process.env.DB_PASS,
-        database: process.env.DB_DATABASE
+        database: process.env.DB_DATABASE,
+        ssl: {
+            ca: "YOUR_CERTIFICATE_SENZA_BEGIN_END",
+            key: "",
+            cert: "",
+            rejectUnauthorized: false
+        }
     }
 });
 
